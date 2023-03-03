@@ -89,6 +89,7 @@ h4 {
   font-weight: 200;
   font-size: 46px;
   margin: 0;
+
 }
 
 .header .title .page-subtitle {
@@ -97,7 +98,6 @@ h4 {
 }
 
 .header-btn {
-  display: inline-block;
   min-width: 160px;
   padding: 16px;
   border-radius: 5px;
@@ -105,17 +105,9 @@ h4 {
   font-weight: bold;
   color: $color-white;
   text-align: center;
-  text-decoration: none;
   cursor: pointer;
   border-width: 2px;
   border-style: solid;
   background-color: $color-secondary;
-  background-position: 0 100%;
-  background-size: 300%;
-  transition: all 1s;
   border-color: $color-secondary;
 }
-
-
-
-
