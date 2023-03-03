@@ -1,5 +1,121 @@
 /* Global */
 
+
+$color-main: #2d3436;
+$color-secondary: #fdcb6e;
+$color-white: #ffffff;
+$font-logo: 'Dancing Script', cursive;
+$font-title: 'Kanit', sans-serif; 
+$font-text: 'Roboto', sans-serif;
+
+body {
+  font-family: $font-text;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.title {
+
+}
+
+h1 {
+  font-family: $font-logo;
+  color: $color-secondary;
+}
+
+h2 {
+  font-family: $font-title;
+  font-style: italic;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+h4 {
+  font-style: italic;
+  font-weight: 200;
+}
+
+.card {
+
+}
+
+.list {
+  list-style-type: none;
+}
+
+.list li {
+  margin: 0 46px 0 0;
+  display: inline-block;
+}
+
+.list li a {
+  text-decoration: none;
+  color: $color-white;
+}
+
+
+
 /* Header */
 
-/* Navigation */
+.header {
+  background-image: url('../images/pexels-thiago-japyassu-1069798.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation {
+  display: flex;
+  margin: 0 10px;
+  flex-grow: 1;
+  justify-content: space-around;
+}
+
+.header .title {
+  flex-grow: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: $color-white;
+}
+
+.header .title .page-title {
+  font-weight: 200;
+  font-size: 46px;
+  margin: 0;
+}
+
+.header .title .page-subtitle {
+  font-size: 66px;
+  margin: 0;
+}
+
+.header-btn {
+  display: inline-block;
+  min-width: 160px;
+  padding: 16px;
+  border-radius: 5px;
+  font-size: 24px;
+  font-weight: bold;
+  color: $color-white;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-width: 2px;
+  border-style: solid;
+  background-color: $color-secondary;
+  background-position: 0 100%;
+  background-size: 300%;
+  transition: all 1s;
+  border-color: $color-secondary;
+}
+
+
+
+
