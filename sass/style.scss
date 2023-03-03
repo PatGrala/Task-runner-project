@@ -15,7 +15,10 @@ body {
 }
 
 .title {
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 h1 {
@@ -29,16 +32,23 @@ h2 {
 }
 
 h3 {
+  font-size: 24px;
   font-weight: bold;
 }
 
 h4 {
   font-style: italic;
   font-weight: 200;
+  font-size: 24px;
+  margin: 0;
 }
 
 .card {
-
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 20px;
 }
 
 .list {
@@ -53,6 +63,11 @@ h4 {
 .list li a {
   text-decoration: none;
   color: $color-white;
+}
+
+.card-container {
+  flex-grow: 2;
+  display: flex;
 }
 
 
@@ -78,10 +93,6 @@ h4 {
 
 .header .title {
   flex-grow: 10;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   color: $color-white;
 }
 
@@ -110,4 +121,97 @@ h4 {
   border-style: solid;
   background-color: $color-secondary;
   border-color: $color-secondary;
+}
+
+/* Services */
+
+.services {
+  display: flex;
+  min-height: 700px;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 96px 0;
+  }
+
+.services .title {
+  flex-grow: 1;
+  justify-content:flex-end;
+}
+
+.services .title h3 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.services .card i {
+  font-size: 35px;
+  color: $color-secondary;
+  border: 3px solid $color-secondary;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  line-height: 2;
+  text-align: center;
+}
+
+/* Portfolio*/
+.portfolio {
+  background-color: #dfe6e9;
+  padding: 96px;
+}
+
+.portfolio .title {
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+.portfolio .title h3 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.portfolio .card-container {
+  justify-content: space-evenly;
+  flex-flow: wrap;
+}
+
+.portfolio .card {
+  width: 400px;
+  height: 600px;
+  background-color: $color-white;
+  justify-content: flex-start;
+}
+
+img {
+  width: 400px;
+  height: 400px;
+  object-fit: fill;
+}
+
+/* Footer */
+
+.footer .list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-left: 0;
+}
+
+.copyright h4 {
+  display: inline-block;
+  padding-right: 200px;
+  font-family: $font-text;
+  font-style: normal
+}
+
+.footer .list a i {
+  font-size: 20px;
+  background-color: #000000;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  line-height: 40px;
+  margin: 0 5px;
 }
