@@ -215,3 +215,30 @@ img {
   line-height: 40px;
   margin: 0 5px;
 }
+
+@media(max-width: 767px){
+  .card-container {
+    flex-direction: column;
+  }
+
+  .footer .list {
+    flex-direction: column;
+  }
+
+  .copyright h4 {
+    display: inline;
+    padding: 0;
+  }
+
+  .header .title .page-title {
+    font-size: 23px
+  }
+
+  .header .title .page-subtitle {
+    font-size: 33px
+  }
+
+  .header-btn {
+    font-size: 20px;
+  }
+}
